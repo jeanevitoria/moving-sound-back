@@ -37,7 +37,7 @@ class AuthView(APIView):
     
 class PlaylistView(APIView):
     
-    def post(self, request):
+    def get(self, request):
         token = request.headers.get('Authorization')
         
         if token and token.startswith('Bearer '):
