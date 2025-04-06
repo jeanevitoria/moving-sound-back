@@ -22,4 +22,5 @@ urlpatterns = [
     path('conversor/', include('conversor.urls')),
     path('spotify/', include('spotify.urls')),
     path('youtube/', include('youtube.urls')),
+    path('crawler/', include('crawler.urls')),
 ]

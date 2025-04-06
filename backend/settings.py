@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'conversor',
     'spotify',
+    'crawler',
     'rest_framework',
     'requests'
 ]
