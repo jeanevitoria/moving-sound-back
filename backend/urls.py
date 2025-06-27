@@ -19,9 +19,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('conversor/', include('conversor.urls')),
     path('spotify/', include('spotify.urls')),
-    path('youtube/', include('youtube.urls')),
     path('crawler/', include('crawler.urls')),
-    path('oauth/', include('oauth.urls')),
 ]

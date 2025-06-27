@@ -48,12 +48,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'conversor',
     'spotify',
     'crawler',
     'rest_framework',
-    'requests',
-    'oauth'
+    'requests'
 ]
 
 MIDDLEWARE = [
