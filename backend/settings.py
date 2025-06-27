@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'spotify',
     'crawler',
     'rest_framework',
-    'requests'
+    'requests',
+    'oauth'
 ]
 
 MIDDLEWARE = [

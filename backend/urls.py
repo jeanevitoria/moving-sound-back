@@ -23,4 +23,5 @@ urlpatterns = [
     path('spotify/', include('spotify.urls')),
     path('youtube/', include('youtube.urls')),
     path('crawler/', include('crawler.urls')),
+    path('oauth/', include('oauth.urls')),
 ]
