@@ -35,7 +35,9 @@ class AuthView(APIView):
 class PlaylistView(APIView):
     def get(self, request, playlist_id):
         token = request.headers.get('Authorization')
-
+        print(request)
+        print(token)
+        
         if not token or not token.startswith('Bearer '):
             return Response({"error": "Token de autorização não fornecido ou inválido"}, 
                           status=status.HTTP_401_UNAUTHORIZED)
