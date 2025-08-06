@@ -27,6 +27,7 @@ class YoutubeSearch:
 class YoutubeCrawler(APIView):
     def post(self, request):
         try:
+            print(request.headers)
             data = json.loads(request.body)
             queries = data.get("search_data", [])
             if not queries:
