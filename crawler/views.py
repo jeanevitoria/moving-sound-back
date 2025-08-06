@@ -22,7 +22,6 @@ class YoutubeSearch:
                     return url
             return []
         except Exception as e:
-            print(f"Search error for '{query}': {str(e)}")
             return []
 
 class YoutubeCrawler(APIView):
@@ -30,7 +29,6 @@ class YoutubeCrawler(APIView):
         try:
             data = json.loads(request.body)
             queries = data.get("search_data", [])
-            print(data)
             if not queries:
                 return Response({"error": "Missing search_data"}, status=400)
 
@@ -51,5 +49,4 @@ class YoutubeCrawler(APIView):
             return Response(data=results, status=200)
             
         except Exception as e:
-            print(f"API error: {str(e)}")
             return Response({"error": "Internal server error"}, status=500)

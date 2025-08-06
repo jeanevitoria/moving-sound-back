@@ -53,11 +53,9 @@ class PlaylistView(APIView):
             response = requests.get(url, headers=headers)
             
             if response.status_code != 200:
-                print("Erro na requisição:", response.status_code, response.text)
                 return Response(data=response.json(), status=response.status_code)
             
             data = response.json()
-            print(data)
                 
             for item in data.get('items', []):
                 track = item.get('track')

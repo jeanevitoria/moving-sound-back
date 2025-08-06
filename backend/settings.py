@@ -35,7 +35,7 @@ SECRET_KEY = os.getenv("CLIENT_SECRET");
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://moving-sound-back-production.up.railway.app"]
 
 
 # Application definition
